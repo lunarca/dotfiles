@@ -55,7 +55,7 @@ NeoBundle 'vim-scripts/TaskList.vim'
 NeoBundle 'vim-scripts/matchit.zip'
 
 " Syntastic for syntax checking
-NeoBundle 'scrooloose/syntastic'
+"NeoBundle 'scrooloose/syntastic'
 
 "" Syntaxes
 NeoBundle 'tpope/vim-git'
@@ -161,5 +161,12 @@ map <C-k> <C-w>k
 
 
 filetype plugin indent on
+
+set colorcolumn=81
+highlight ColorColumn guibg=#eeeeee
+
+" Make delimitMate work with spaces properly
+let b:delimitMate_expand_space = 1
+let b:delimitMate_expand_cr = 1
 
 NeoBundleCheck

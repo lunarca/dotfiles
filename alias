@@ -1,2 +1,3 @@
 alias ls="ls -G"
 alias csis="cd $HOME/Documents/pentest/Current"
+alias l="ls -la"
