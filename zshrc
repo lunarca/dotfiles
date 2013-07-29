@@ -8,4 +8,4 @@ source ~/.alias
 
 PATH=/usr/local/bin:$HOME/.rvm/bin:$HOME/bin:/usr/local/sbin:$PATH
 
-[[ -s "$HOME/.rvm/scripts/rvm"  ]] && . "$HOME/.rvm/scripts/rvm" []
+[[ -s "$HOME/.rvm/scripts/rvm"  ]] && . "$HOME/.rvm/scripts/rvm"
