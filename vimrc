@@ -27,6 +27,9 @@ NeoBundle 'Lokaltog/vim-easymotion'
 " Git setup
 NeoBundle 'tpope/vim-fugitive'
 
+" Vim-rails
+NeoBundle 'tpope/vim-rails'
+
 " NERDTree directory viewer
 NeoBundle 'scrooloose/nerdtree'
 
@@ -66,7 +69,7 @@ NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'ChrisYip/Better-CSS-Syntax-for-Vim'
 NeoBundle 'othree/html5.vim'
 NeoBundle 'nblock/vim-dokuwiki'
-NeoBundle 'klen/python-mode'
+"NeoBundle 'klen/python-mode'
 NeoBundle 'rodjek/vim-puppet'
 
 " Tab management

@@ -9,7 +9,6 @@ html5.vim
 matchit.zip
 neobundle.vim
 nerdtree
-python-mode
 rainbow_parentheses.vim
 tabman.vim
 vim-colors-solarized
@@ -23,6 +22,7 @@ vim-haml
 vim-javascript
 vim-node.js
 vim-puppet
+vim-rails
 vim-ruby
 vim-surround
 vimproc
