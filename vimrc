@@ -172,4 +172,7 @@ highlight ColorColumn guibg=#eeeeee
 let b:delimitMate_expand_space = 1
 let b:delimitMate_expand_cr = 1
 
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+
 NeoBundleCheck
