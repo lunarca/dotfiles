@@ -4,7 +4,7 @@ if has('vim_starting')
     set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -109,6 +109,9 @@ set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+
 " Backup, auto save, swap, undo, and view files.
 set wildignore+=*~,#*#,*.sw?,%*,*=
 
@@ -171,5 +174,7 @@ highlight ColorColumn guibg=#eeeeee
 " Make delimitMate work with spaces properly
 let b:delimitMate_expand_space = 1
 let b:delimitMate_expand_cr = 1
+
+call neobundle#end()
 
 NeoBundleCheck
