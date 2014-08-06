@@ -177,4 +177,7 @@ let b:delimitMate_expand_cr = 1
 
 call neobundle#end()
 
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+
 NeoBundleCheck
