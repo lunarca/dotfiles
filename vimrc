@@ -9,11 +9,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" Recommended to install
-" After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f
-" your_machines_makefile
-NeoBundle 'Shougo/vimproc'
-
 " Bundles from GitHub
 " Colors
 NeoBundle 'chriskempson/base16-vim'

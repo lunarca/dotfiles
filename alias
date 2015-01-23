@@ -1,3 +1,3 @@
-alias ls="ls -G"
+alias ls="ls --color"
 alias csis="cd $HOME/Documents/pentest/Current"
 alias l="ls -la"
