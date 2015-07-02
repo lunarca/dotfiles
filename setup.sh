@@ -6,7 +6,7 @@ ln -s ~/dotfiles/vim ~/.vim
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/alias ~/.alias
-ln -s ~/dotfiles/screenrc ~/.screenrc
+ln -s ~/dotfiles/config/awesome ~/.config/awesome
 
 # Set up git
 git config --global user.name "Alex DeFreese"
