@@ -7,6 +7,11 @@ export EDITOR="vim"
 
 source ~/.alias
 
+bindkey "\e\e[D" backward-word
+bindkey "\e\e[C" forward-word
+bindkey "^[a" beginning-of-line
+bindkey "^[e" end-of-line
+
 PATH=/usr/local/bin:$HOME/.rvm/bin:$HOME/bin:/usr/local/sbin:/home/lunarca/bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm"  ]] && . "$HOME/.rvm/scripts/rvm"
