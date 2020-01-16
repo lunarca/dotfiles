@@ -18,3 +18,5 @@ PATH=/usr/local/bin:$HOME/.rvm/bin:$HOME/bin:/usr/local/sbin:/home/lunarca/bin:$
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 export GOPATH=$HOME/go
+export PYENV_ROOT="$HOME/.pyenv"
+eval "$(pyenv init -)"
