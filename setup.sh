@@ -1,5 +1,4 @@
 mkdir -p ~/dotfiles/vim/bundle
-git clone https://github.com/Shougo/neobundle.vim ~/dotfiles/vim/bundle/neobundle.vim
 
 # Make links
 ln -s ~/dotfiles/vim ~/.vim
