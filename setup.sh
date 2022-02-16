@@ -1,5 +1,9 @@
 mkdir -p ~/dotfiles/vim/bundle
 mkdir -p ~/.config/fish
+mkdir -p $HOME/bin
+
+# Copy over scripts
+cp $HOME/dotfiles/scripts/*.sh $HOME/bin
 
 # Make links
 ln -s ~/dotfiles/vim ~/.vim
