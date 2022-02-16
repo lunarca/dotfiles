@@ -1,6 +1,8 @@
 set -gx PATH /opt/homebrew/bin:$HOME/.cargo/bin:$HOME/bin:$PATH
-status is-login; and pyenv init --path | source
 
+
+# Pyenv stuff
+status is-login; and pyenv init --path | source
 status is-interactive; and pyenv init - | source
 
 
