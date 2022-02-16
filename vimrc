@@ -1,80 +1,5 @@
 set nocompatible
 
-if has('vim_starting')
-    set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-" Let NeoBundle manage NeoBundle
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" Bundles from GitHub
-" Colors
-NeoBundle 'chriskempson/base16-vim'
-NeoBundle 'altercation/vim-colors-solarized'
-
-" Fuzzy Searching Files
-NeoBundle 'kien/ctrlp.vim'
-
-NeoBundle 'Lokaltog/vim-easymotion'
-
-" Git setup
-NeoBundle 'tpope/vim-fugitive'
-
-" Vim-rails
-NeoBundle 'tpope/vim-rails'
-
-" NERDTree directory viewer
-NeoBundle 'scrooloose/nerdtree'
-
-" Window Manager
-"NeoBundle 'spolu/dwm.vim'
-
-" Colors hex values in CSS files
-NeoBundle 'ap/vim-css-color'
-
-" Autocloses if->endif, etc...
-NeoBundle 'tpope/vim-endwise'
-
-" Allows changing surrounding delimeters
-NeoBundle 'tpope/vim-surround'
-
-" Colors parens
-NeoBundle 'kien/rainbow_parentheses.vim'
-
-" Automatically closes quotes, parenthesis, brackets, etc.
-NeoBundle 'Raimondi/delimitMate'
-
-" looks for todos
-NeoBundle 'vim-scripts/TaskList.vim'
-
-" Matching if/endif, not just {} [] ()
-NeoBundle 'vim-scripts/matchit.zip'
-
-" Syntastic for syntax checking
-"NeoBundle 'scrooloose/syntastic'
-
-"" Syntaxes
-NeoBundle 'tpope/vim-git'
-NeoBundle 'tpope/vim-haml'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'mmalecki/vim-node.js'
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'ChrisYip/Better-CSS-Syntax-for-Vim'
-NeoBundle 'othree/html5.vim'
-NeoBundle 'nblock/vim-dokuwiki'
-"NeoBundle 'klen/python-mode'
-NeoBundle 'rodjek/vim-puppet'
-
-" Tab management
-NeoBundle 'kien/tabman.vim'
-
-" Alternate between .c and .h files
-NeoBundle 'a.vim'
-
-NeoBundle 'bufexplorer.zip'
-
 set t_Co=256
 set showmode
 set showcmd
@@ -160,19 +85,9 @@ map <C-h> <C-w>h
 map <C-l> <C-w>l
 map <C-k> <C-w>k
 
-
 filetype plugin indent on
 
-set colorcolumn=81
-highlight ColorColumn guibg=#eeeeee
-
-" Make delimitMate work with spaces properly
-let b:delimitMate_expand_space = 1
-let b:delimitMate_expand_cr = 1
-
-call neobundle#end()
 
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 
-NeoBundleCheck
