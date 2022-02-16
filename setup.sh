@@ -9,6 +9,10 @@ ln -s ~/dotfiles/alias ~/.alias
 ln -s ~/dotfiles/config/awesome ~/.config/awesome
 ln -s ~/dotfiles/config.fish ~/.config/fish/config.fish
 
+# Bootstrap an SSH config for Github
+mkdir -p $HOME/.ssh
+cat ssh-config >> $HOME/.ssh/config
+
 # Set up git
 git config --global user.name "Alex DeFreese"
 git config --global user.email "alexdefreese@gmail.com"
