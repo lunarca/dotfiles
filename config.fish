@@ -1,7 +1,9 @@
-status --is-interactive; and source (pyenv init -|psub)
-set -x PATH $HOME/.cabal/bin $HOME/.ghcup/bin $HOME/bin $PATH
+set -gx PATH /opt/homebrew/bin:$HOME/.cargo/bin:$HOME/bin:$PATH
+status is-login; and pyenv init --path | source
 
-# tabtab source for electron-forge package
-# uninstall by removing these lines or running `tabtab uninstall electron-forge`
-[ -f /Users/lunarca/.config/nvm/13.11.0/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.fish ]; and . /Users/lunarca/.config/nvm/13.11.0/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.fish
+status is-interactive; and pyenv init - | source
 
+
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
