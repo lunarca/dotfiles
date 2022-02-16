@@ -1,17 +1,17 @@
-mkdir -p ~/dotfiles/vim/bundle
-mkdir -p ~/.config/fish
+mkdir -p $HOME/dotfiles/vim/bundle
+mkdir -p $HOME/.config/fish
 mkdir -p $HOME/bin
 
 # Copy over scripts
 cp $HOME/dotfiles/scripts/*.sh $HOME/bin
 
 # Make links
-ln -s ~/dotfiles/vim ~/.vim
-ln -s ~/dotfiles/vimrc ~/.vimrc
-ln -s ~/dotfiles/zshrc ~/.zshrc
-ln -s ~/dotfiles/alias ~/.alias
-ln -s ~/dotfiles/config/awesome ~/.config/awesome
-ln -s ~/dotfiles/config.fish ~/.config/fish/config.fish
+ln -s $HOME/dotfiles/vim $HOME/.vim
+ln -s $HOME/dotfiles/vimrc $HOME/.vimrc
+ln -s $HOME/dotfiles/zshrc $HOME/.zshrc
+ln -s $HOME/dotfiles/alias $HOME/.alias
+ln -s $HOME/dotfiles/config/awesome $HOME/.config/awesome
+ln -s $HOME/dotfiles/config.fish $HOME/.config/fish/config.fish
 
 # Bootstrap an SSH config for Github
 mkdir -p $HOME/.ssh
